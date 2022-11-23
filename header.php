@@ -1,5 +1,5 @@
-<!doctype php>
-<php class="no-js" lang="zxx">
+<!doctype html>
+<html class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -40,8 +40,36 @@
                         <div class="ltn__top-bar-menu">
                             <ul>
                                 <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i> info@webmail.com</a></li>
-                                <li><a href="locations.php"><i class="icon-placeholder"></i>2, 13th East Cross Road, Gandhi Nagar, Vellore – 632 006</a></li>
+                                <li><a href="locations.html"><i class="icon-placeholder"></i> 15/A, Nest Tower, NYC</a></li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="top-bar-right text-end">
+                            <div class="ltn__top-bar-menu">
+                                <ul>
+                                    <li class="d-none">
+                                        <!-- ltn__language-menu -->
+                                    
+                                    </li>
+                                    <li>
+                                        <!-- ltn__social-media -->
+                                        <div class="ltn__social-media">
+                                            <ul>
+                                                <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                                
+                                                <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <!-- header-top-btn -->
+                                        
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +84,7 @@
                     <div class="col">
                         <div class="site-logo-wrap">
                             <div class="site-logo">
-                                <a href="index.php"><img src="img/logo.png" alt="Logo"></a>
+                                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
                             </div>
                             <div class="get-support clearfix d-none">
                                 <div class="get-support-icon">
