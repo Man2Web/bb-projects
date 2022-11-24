@@ -211,10 +211,10 @@ font-family: 'Poppins', sans-serif;
   /* Darken */
   --ltn__primary-color-3: #133236;
   /* Lighten */
-  --ltn__secondary-color: #FF5A3C;
-  --ltn__secondary-color-2: #cb3421;
+  --ltn__secondary-color: #cf2931;
+  --ltn__secondary-color-2: #cf2931;
   /* Darken */
-  --ltn__secondary-color-3: #fb412a;
+  --ltn__secondary-color-3: #cf2931;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #5C727D;
@@ -236,20 +236,20 @@ font-family: 'Poppins', sans-serif;
   /* Background Colors ( 1, 2, 3, 4, 5 )  */
   --section-bg-1: #F2F6F7;
   /* White */
-  --section-bg-2: #171B2A;
+  --section-bg-2: #3d3838;
   /* Black */
   --section-bg-5: #FFF2F0;
   /* White */
-  --section-bg-6: #0B2C3D;
+  --section-bg-6: #3d3838;
   /* Black */
-  --section-bg-7: #282b38;
+  --section-bg-7: #3d3838;
   /* Black */
   /* Border Colors */
   --border-color-1: #e5eaee;
   /* White */
   --border-color-2: #1e2021;
   /* Black */
-  --border-color-3: #5C617F;
+  --border-color-3: #3d3838;
   /* Black */
   --border-color-4: #eb6954;
   /* Red */
