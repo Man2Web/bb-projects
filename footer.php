@@ -118,7 +118,7 @@
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="ltn__copyright-design clearfix">
-                            <p>All Rights Reserved @ Company <span class="current-year"></span></p>
+                            <p>All Rights Reserved @ B&B Builders PVT. LTD <span class="current-year"></span></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 align-self-center">
