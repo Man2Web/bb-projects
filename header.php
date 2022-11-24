@@ -84,7 +84,7 @@
                     <div class="col">
                         <div class="site-logo-wrap">
                             <div class="site-logo">
-                                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                                <a href="index.html"><img style= "scale:0.5" src="img/logo.png " alt="Logo"></a>
                             </div>
                             <div class="get-support clearfix d-none">
                                 <div class="get-support-icon">
