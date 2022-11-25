@@ -20,56 +20,25 @@
     <!-- BREADCRUMB AREA END -->
 
     <!-- ABOUT US AREA START -->
-    <div class="ltn__about-us-area pt-120--- pb-90 mt--30">
+    <div class="ltn__about-us-area pb-115">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 align-self-center">
-                    <div class="about-us-img-wrap about-img-left">
-                        <img src="img/others/13.png" alt="About Us Image">
-                        <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
-                            
-                            <div class="ltn__video-img ltn__animation-pulse1">
-                                <img src="img/others/8.png" alt="video popup bg image">
-                                <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&amp;showinfo=0"  data-rel="lightcase:myCollection">
-                                    <i class="fa fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-lg-5 align-self-center">
+                    <div class="about-us-img-wrap ltn__img-shape-left  about-img-left">
+                        <img src="img/service/11.jpg" alt="Image">
                     </div>
                 </div>
-                <div class="col-lg-6 align-self-center">
+                <div class="col-lg-7 align-self-center">
                     <div class="about-us-info-wrap">
                         <div class="section-title-area ltn__section-title-2--- mb-20">
                             <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
-                            <h1 class="section-title">The Leading Real Estate
-                                Rental Marketplace<span>.</span></h1>
-                            <p>Over 39,000 people work for us in more than 70 countries all over the
-                                This breadth of global coverage, combined with specialist services</p>
+                            <h1 class="section-title">We're Passionate About Delivering Spaces that Enhance Lives<span>.</span></h1>
+                            <p>B&B Property Development strives to be a premier full-service South Indian real estate development and management company. 
+                            We seek to promote, execute, and deliver residential and commercial builds of enduring quality and sustainable resource-use,
+                            that meet our customers’ needs, with transparency, trustworthiness and profitability.</p>
                         </div>
-                        <ul class="ltn__list-item-half clearfix">
-                            <li>
-                                <i class="flaticon-home-2"></i>
-                                Smart Home Design
-                            </li>
-                            <li>
-                                <i class="flaticon-mountain"></i>
-                                Beautiful Scene Around
-                            </li>
-                            <li>
-                                <i class="flaticon-heart"></i>
-                                Exceptional Lifestyle
-                            </li>
-                            <li>
-                                <i class="flaticon-secure"></i>
-                                Complete 24/7 Security
-                            </li>
-                        </ul>
-                        <div class="ltn__callout bg-overlay-theme-05  mt-30">
-                            <p>"Enimad minim veniam quis nostrud exercitation <br>
-                                llamco laboris. Lorem ipsum dolor sit amet" </p>
-                        </div>
-                        <div class="btn-wrapper animated">
-                            <a href="service.html" class="theme-btn-1 btn btn-effect-1">OUR SERVICES</a>
+                        <div class="about-us-info-wrap-inner about-us-info-devide---">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
                 </div>
@@ -84,8 +53,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Our Services</h6>
-                        <h1 class="section-title">Our Main Focus</h1>
+                        <h2 class="section-subtitle section-subtitle-2 ltn__secondary-color">Vision / Mission / Values</h2>
+                        <!-- <h1 class="section-title">Our Main Focus</h1> -->
                     </div>
                 </div>
             </div>
@@ -97,9 +66,11 @@
                             <img src="img/icons/icon-img/21.png" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h3><a href="service-details.html">Buy a home</a></h3>
-                            <p>over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
-                            <a class="ltn__service-btn" href="service-details.html">Find A Home <i class="flaticon-right-arrow"></i></a>
+                            <h3><a href="#">Vision</a></h3>
+                            <p>B&B Property Development strives to be a premier full-service South Indian real estate development and management company. 
+                            We seek to promote, execute, and deliver residential and commercial builds of enduring quality and sustainable resource-use,
+                            that meet our customers’ needs, with transparency, trustworthiness and profitability.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -110,9 +81,9 @@
                             <img src="img/icons/icon-img/22.png" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h3><a href="service-details.html">Rent a home</a></h3>
-                            <p>over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
-                            <a class="ltn__service-btn" href="service-details.html">Find A Home <i class="flaticon-right-arrow"></i></a>
+                            <h3><a href="#">Mission</a></h3>
+                            <p>Our customers, internal and external, must see us as an innovative, ethical and trustworthy company to deal with. We will anticipate, understand and execute their needs in a time-bound and cost-effective manner, adding value through our efforts and exceeding their expectations.</p><br>
+                            
                         </div>
                     </div>
                 </div>
@@ -123,10 +94,10 @@
                             <img src="img/icons/icon-img/23.png" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h3><a href="service-details.html">Sell a home</a></h3>
-                            <p>over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
-                            <a class="ltn__service-btn" href="service-details.html">Find A Home <i class="flaticon-right-arrow"></i></a>
-                        </div>
+                            <h3><a href="#">Values</a></h3>
+                            <p>To maintain transparency, accountability, integrity, legality and fairness in all our transactions. And thereby become
+                            a company that delivers on its commitments, and one that all our stakeholders are proud to be associated with.</p><br><br>
+                            
                     </div>
                 </div>
             </div>
@@ -134,282 +105,4 @@
     </div>
     <!-- FEATURE AREA END -->
 
-    <!-- TESTIMONIAL AREA START (testimonial-7) -->
-    <div class="ltn__testimonial-area section-bg-1--- bg-image-top pt-120 pb-70" data-bs-bg="img/bg/20.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Our Testimonial</h6>
-                        <h1 class="section-title">Clients Feedback</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row ltn__testimonial-slider-5-active slick-arrow-1">
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/1.jpg" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>Jacob William</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/2.jpg" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>Kelian Anderson</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/3.jpg" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>Adam Joseph</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/4.jpg" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>James Carter</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
-    <!-- TESTIMONIAL AREA END -->
-
-    <!-- BLOG AREA START (blog-3) -->
-    <div class="ltn__blog-area pt-115--- pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">News & Blogs</h6>
-                        <h1 class="section-title">Leatest News Feeds</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/1.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Decorate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">10 Brilliant Ways To Decorate Your Home</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/2.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Interior</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">The Most Inspiring Interior Design Of 2021</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>July 23, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/3.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Estate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">Recent Commercial Real Estate Transactions</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>May 22, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/4.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Room</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">Renovating a Living Room? Experts Share Their Secrets</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/5.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Trends</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">7 home trends that will shape your house in 2021</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
-    <!-- BLOG AREA END -->
 <?php include 'footer.php'; ?>
