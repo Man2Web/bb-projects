@@ -1,7 +1,7 @@
 <?php
 require('top.inc.php');
-?>         
-<?php 
+?>
+<?php
 if(isset($_GET['type']) && $_GET['type']!=''){
 	$type=get_safe_value($con,$_GET['type']);
 	if($type=='status'){
@@ -16,10 +16,9 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 		mysqli_query($con,$update_status_sql);
 	}
 }
-$sql="select * from contact_us";
-$res=mysqli_query($con,$sql);  ?>
 
 
+?>
 
 
 
@@ -35,7 +34,7 @@ $res=mysqli_query($con,$sql);  ?>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
-					
+
                         <table class="table " >
 						 <thead style="text-align:center">
 							<tr>
@@ -49,12 +48,15 @@ $res=mysqli_query($con,$sql);  ?>
 							</tr>
 						 </thead>
 						 <tbody>
-							<?php 
-							
+							<?php
+							$sql="select * from contact_us";
+							$res=mysqli_query($con,$sql);
+							$i=1;
 							while($row=mysqli_fetch_assoc($res)){?>
+
 							<tr>
-							   
-							   <td><?php echo $row['id'] ?></td>
+
+							   <td><?php echo $i; ?></td>
 							   <td><?php echo $row['name']?></td>
 							   <td><?php echo $row['email']?></td>
 							   <td><?php echo $row['phone']?></td>
@@ -67,15 +69,15 @@ $res=mysqli_query($con,$sql);  ?>
 								}else{
 									echo "<span class='badge badge-pending'><a href='?type=status&operation=active&id=".$row['id']."'>pending</a></span>&nbsp;";
 								}
-								
+
 								?>
 							   </td>
 							</tr>
-							<?php } ?>
+							<?php $i++;} ?>
 						 </tbody>
 					  </table>
 
-                       
+
 				   </div>
 				</div>
 			 </div>

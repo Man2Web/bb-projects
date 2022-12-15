@@ -80,7 +80,88 @@
                                 <a data-bs-toggle="tab" href="#ltn__form_tab_1_2" class=""><i class="far fa-user"></i>Get a Dealer</a>
                             </div>
                         </div>
-                        
+                        <div class="tab-content bg-white box-shadow-1 ltn__border position-relative pb-10">
+                            <div class="tab-pane fade active show" id="ltn__form_tab_1_1">
+                                <div class="car-dealer-form-inner">
+                                    <form action="#" class="ltn__car-dealer-form-box row">
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-car---- col-lg-3 col-md-6">
+                                            <select class="nice-select">
+                                                <option>Choose Area</option>
+                                                <option>chicago</option>
+                                                <option>London</option>
+                                                <option>Los Angeles</option>
+                                                <option>New York</option>
+                                                <option>New Jersey</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-meter---- col-lg-3 col-md-6">
+                                            <select class="nice-select">
+                                                <option>Property Status</option>
+                                                <option>Open house</option>
+                                                <option>Rent</option>
+                                                <option>Sale</option>
+                                                <option>Sold</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-calendar---- col-lg-3 col-md-6">
+                                            <select class="nice-select">
+                                                <option>Property Type</option>
+                                                <option>Apartment</option>
+                                                <option>Co-op</option>
+                                                <option>Condo</option>
+                                                <option>Single Family Home</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
+                                            <div class="btn-wrapper text-center mt-0">
+                                                <!-- <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> -->
+                                                <a href="shop-right-sidebar.html" class="btn theme-btn-1 btn-effect-1 text-uppercase">Find Now</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ltn__form_tab_1_2">
+                                <div class="car-dealer-form-inner">
+                                    <form action="#" class="ltn__car-dealer-form-box row">
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-car---- col-lg-3 col-md-6">
+                                            <select class="nice-select">
+                                                <option>Choose Area</option>
+                                                <option>chicago</option>
+                                                <option>London</option>
+                                                <option>Los Angeles</option>
+                                                <option>New York</option>
+                                                <option>New Jersey</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-meter---- col-lg-3 col-md-6">
+                                            <select class="nice-select">
+                                                <option>Property Status</option>
+                                                <option>Open house</option>
+                                                <option>Rent</option>
+                                                <option>Sale</option>
+                                                <option>Sold</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-calendar---- col-lg-3 col-md-6">
+                                            <select class="nice-select">
+                                                <option>Property Type</option>
+                                                <option>Apartment</option>
+                                                <option>Co-op</option>
+                                                <option>Condo</option>
+                                                <option>Single Family Home</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
+                                            <div class="btn-wrapper text-center mt-0">
+                                                <!-- <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> -->
+                                                <a href="shop-right-sidebar.html" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Properties</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,7 +177,7 @@
                     <div class="about-us-img-wrap about-img-left">
                         <img src="img/others/7.png" alt="About Us Image">
                         <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
-                            
+
                             <div class="ltn__video-img ltn__animation-pulse1">
                                 <img src="img/others/8.png" alt="video popup bg image">
                                 <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&amp;showinfo=0"  data-rel="lightcase:myCollection">
@@ -321,416 +402,56 @@
                 </div>
             </div>
             <div class="row ltn__product-slider-item-four-active-full-width slick-arrow-1">
+
                 <!-- ltn__product-item -->
+
+                <?php
+                include 'connection.php';
+          $sql="select * from product";
+          $res=mysqli_query($db,$sql);
+
+          $i=1;
+          while($row=mysqli_fetch_assoc($res)){?>
                 <div class="col-lg-12">
                     <div class="ltn__product-item ltn__product-item-4 text-center---">
                         <div class="product-img">
-                            <a href="product-details.html"><img src="img/product-3/1.jpg" alt="#"></a>
+                            <a href="product-details.html"><img src="admin/uploads/<?php echo $row['image']; ?>" alt="#"></a>
                             <div class="product-badge">
                                 <ul>
-                                    <li class="sale-badge bg-green">For Rent</li>
+                                    <li class="sale-badge bg-red">
+                                      <?php
+                                      if($row['status']=='1')
+                                      {
+                                       echo 'ON GOING';
+                                      }
+                                      else {
+                                        {echo 'COMPLETED';}
+                                      }
+                                       ?>
+                                     </li>
                                 </ul>
                             </div>
                             <div class="product-img-location-gallery">
                                 <div class="product-img-location">
                                     <ul>
                                         <li>
-                                            <a href="locations.html"><i class="flaticon-pin"></i> Belmont Gardens, Chicago</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-img-gallery">
-                                    <ul>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i> 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-film"></i> 2</a>
+                                            <a href="locations.html"><i class="flaticon-pin"></i><?php echo $row['short_desc']; ?></a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="product-info">
-                            <div class="product-price">
-                                <span>$34,900<label>/Month</label></span>
-                            </div>
-                            <h2 class="product-title"><a href="product-details.html">New Apartment Nice View</a></h2>
+                            <h2 class="product-title"><a href="product-details.html"><?php echo $row['name']; ?></a></h2>
                             <div class="product-description">
-                                <p>Beautiful Huge 1 Family House In Heart Of <br>
-                                    Westbury. Newly Renovated With New Wood</p>
-                            </div>
-                            <ul class="ltn__list-item-2 ltn__list-item-2-before">
-                                <li><span>3 <i class="flaticon-bed"></i></span>
-                                    Bedrooms
-                                </li>
-                                <li><span>2 <i class="flaticon-clean"></i></span>
-                                    Bathrooms
-                                </li>
-                                <li><span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                                    square Ft
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="product-info-bottom">
-                            <div class="real-estate-agent">
-                                <div class="agent-img">
-                                    <a href="team-details.html"><img src="img/blog/author.jpg" alt="#"></a>
-                                </div>
-                                <div class="agent-brief">
-                                    <h6><a href="team-details.html">William Seklo</a></h6>
-                                    <small>Estate Agents</small>
-                                </div>
-                            </div>
-                            <div class="product-hover-action">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-                                            <i class="flaticon-expand"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-                                            <i class="flaticon-heart-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" title="Product Details">
-                                            <i class="flaticon-add"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <p><?php echo $row['description']; ?></p>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <!-- ltn__product-item -->
-                <div class="col-lg-12">
-                    <div class="ltn__product-item ltn__product-item-4 text-center---">
-                        <div class="product-img">
-                            <a href="product-details.html"><img src="img/product-3/2.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="sale-badge bg-green---">For Sale</li>
-                                </ul>
-                            </div>
-                            <div class="product-img-location-gallery">
-                                <div class="product-img-location">
-                                    <ul>
-                                        <li>
-                                            <a href="locations.html"><i class="flaticon-pin"></i> Belmont Gardens, Chicago</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-img-gallery">
-                                    <ul>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i> 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-film"></i> 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-price">
-                                <span>$34,900<label>/Month</label></span>
-                            </div>
-                            <h2 class="product-title"><a href="product-details.html">Modern Apartments</a></h2>
-                            <div class="product-description">
-                                <p>Beautiful Huge 1 Family House In Heart Of <br>
-                                    Westbury. Newly Renovated With New Wood</p>
-                            </div>
-                            <ul class="ltn__list-item-2 ltn__list-item-2-before">
-                                <li><span>3 <i class="flaticon-bed"></i></span>
-                                    Bedrooms
-                                </li>
-                                <li><span>2 <i class="flaticon-clean"></i></span>
-                                    Bathrooms
-                                </li>
-                                <li><span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                                    square Ft
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="product-info-bottom">
-                            <div class="real-estate-agent">
-                                <div class="agent-img">
-                                    <a href="team-details.html"><img src="img/blog/author.jpg" alt="#"></a>
-                                </div>
-                                <div class="agent-brief">
-                                    <h6><a href="team-details.html">William Seklo</a></h6>
-                                    <small>Estate Agents</small>
-                                </div>
-                            </div>
-                            <div class="product-hover-action">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-                                            <i class="flaticon-expand"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-                                            <i class="flaticon-heart-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" title="Product Details">
-                                            <i class="flaticon-add"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ltn__product-item -->
-                <div class="col-lg-12">
-                    <div class="ltn__product-item ltn__product-item-4 text-center---">
-                        <div class="product-img">
-                            <a href="product-details.html"><img src="img/product-3/3.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="sale-badge bg-green">For Rent</li>
-                                </ul>
-                            </div>
-                            <div class="product-img-location-gallery">
-                                <div class="product-img-location">
-                                    <ul>
-                                        <li>
-                                            <a href="locations.html"><i class="flaticon-pin"></i> Belmont Gardens, Chicago</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-img-gallery">
-                                    <ul>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i> 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-film"></i> 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-price">
-                                <span>$34,900<label>/Month</label></span>
-                            </div>
-                            <h2 class="product-title"><a href="product-details.html">Comfortable Apartment</a></h2>
-                            <div class="product-description">
-                                <p>Beautiful Huge 1 Family House In Heart Of <br>
-                                    Westbury. Newly Renovated With New Wood</p>
-                            </div>
-                            <ul class="ltn__list-item-2 ltn__list-item-2-before">
-                                <li><span>3 <i class="flaticon-bed"></i></span>
-                                    Bedrooms
-                                </li>
-                                <li><span>2 <i class="flaticon-clean"></i></span>
-                                    Bathrooms
-                                </li>
-                                <li><span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                                    square Ft
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="product-info-bottom">
-                            <div class="real-estate-agent">
-                                <div class="agent-img">
-                                    <a href="team-details.html"><img src="img/blog/author.jpg" alt="#"></a>
-                                </div>
-                                <div class="agent-brief">
-                                    <h6><a href="team-details.html">William Seklo</a></h6>
-                                    <small>Estate Agents</small>
-                                </div>
-                            </div>
-                            <div class="product-hover-action">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-                                            <i class="flaticon-expand"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-                                            <i class="flaticon-heart-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" title="Product Details">
-                                            <i class="flaticon-add"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ltn__product-item -->
-                <div class="col-lg-12">
-                    <div class="ltn__product-item ltn__product-item-4 text-center---">
-                        <div class="product-img">
-                            <a href="product-details.html"><img src="img/product-3/4.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="sale-badge bg-green">For Rent</li>
-                                </ul>
-                            </div>
-                            <div class="product-img-location-gallery">
-                                <div class="product-img-location">
-                                    <ul>
-                                        <li>
-                                            <a href="locations.html"><i class="flaticon-pin"></i> Belmont Gardens, Chicago</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-img-gallery">
-                                    <ul>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i> 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-film"></i> 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-price">
-                                <span>$34,900<label>/Month</label></span>
-                            </div>
-                            <h2 class="product-title"><a href="product-details.html">Luxury villa in Rego Park </a></h2>
-                            <div class="product-description">
-                                <p>Beautiful Huge 1 Family House In Heart Of <br>
-                                    Westbury. Newly Renovated With New Wood</p>
-                            </div>
-                            <ul class="ltn__list-item-2 ltn__list-item-2-before">
-                                <li><span>3 <i class="flaticon-bed"></i></span>
-                                    Bedrooms
-                                </li>
-                                <li><span>2 <i class="flaticon-clean"></i></span>
-                                    Bathrooms
-                                </li>
-                                <li><span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                                    square Ft
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="product-info-bottom">
-                            <div class="real-estate-agent">
-                                <div class="agent-img">
-                                    <a href="team-details.html"><img src="img/blog/author.jpg" alt="#"></a>
-                                </div>
-                                <div class="agent-brief">
-                                    <h6><a href="team-details.html">William Seklo</a></h6>
-                                    <small>Estate Agents</small>
-                                </div>
-                            </div>
-                            <div class="product-hover-action">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-                                            <i class="flaticon-expand"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-                                            <i class="flaticon-heart-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" title="Product Details">
-                                            <i class="flaticon-add"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ltn__product-item -->
-                <div class="col-lg-12">
-                    <div class="ltn__product-item ltn__product-item-4 text-center---">
-                        <div class="product-img">
-                            <a href="product-details.html"><img src="img/product-3/5.jpg" alt="#"></a>
-                            <div class="product-badge">
-                                <ul>
-                                    <li class="sale-badge bg-green">For Rent</li>
-                                </ul>
-                            </div>
-                            <div class="product-img-location-gallery">
-                                <div class="product-img-location">
-                                    <ul>
-                                        <li>
-                                            <a href="locations.html"><i class="flaticon-pin"></i> Belmont Gardens, Chicago</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-img-gallery">
-                                    <ul>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i> 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html"><i class="fas fa-film"></i> 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-price">
-                                <span>$34,900<label>/Month</label></span>
-                            </div>
-                            <h2 class="product-title"><a href="product-details.html">Beautiful Flat in Manhattan </a></h2>
-                            <div class="product-description">
-                                <p>Beautiful Huge 1 Family House In Heart Of <br>
-                                    Westbury. Newly Renovated With New Wood</p>
-                            </div>
-                            <ul class="ltn__list-item-2 ltn__list-item-2-before">
-                                <li><span>3 <i class="flaticon-bed"></i></span>
-                                    Bedrooms
-                                </li>
-                                <li><span>2 <i class="flaticon-clean"></i></span>
-                                    Bathrooms
-                                </li>
-                                <li><span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                                    square Ft
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="product-info-bottom">
-                            <div class="real-estate-agent">
-                                <div class="agent-img">
-                                    <a href="team-details.html"><img src="img/blog/author.jpg" alt="#"></a>
-                                </div>
-                                <div class="agent-brief">
-                                    <h6><a href="team-details.html">William Seklo</a></h6>
-                                    <small>Estate Agents</small>
-                                </div>
-                            </div>
-                            <div class="product-hover-action">
-                                <ul>
-                                    <li>
-                                        <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-                                            <i class="flaticon-expand"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-                                            <i class="flaticon-heart-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details.html" title="Product Details">
-                                            <i class="flaticon-add"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <?php $i++; } ?>
                 <!--  -->
             </div>
         </div>
@@ -917,7 +638,7 @@
         </div>
     </div>
     <!-- VIDEO AREA END -->
-    
+
     <!-- CATEGORY AREA START -->
     <div class="ltn__category-area section-bg-1-- ltn__primary-bg before-bg-1 bg-image bg-overlay-theme-black-5--0 pt-115 pb-90 d-none" data-bs-bg="img/bg/5.jpg">
         <div class="container">
@@ -1128,7 +849,7 @@
                 <div class="col-lg-4">
                     <div class="ltn__testimonial-item ltn__testimonial-item-7">
                         <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
+                            <p><i class="flaticon-left-quote-1"></i>
                                 Precious ipsum dolor sit amet
                                 consectetur adipisicing elit, sed dos
                                 mod tempor incididunt ut labore et
@@ -1150,7 +871,7 @@
                 <div class="col-lg-4">
                     <div class="ltn__testimonial-item ltn__testimonial-item-7">
                         <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
+                            <p><i class="flaticon-left-quote-1"></i>
                                 Precious ipsum dolor sit amet
                                 consectetur adipisicing elit, sed dos
                                 mod tempor incididunt ut labore et
@@ -1172,7 +893,7 @@
                 <div class="col-lg-4">
                     <div class="ltn__testimonial-item ltn__testimonial-item-7">
                         <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
+                            <p><i class="flaticon-left-quote-1"></i>
                                 Precious ipsum dolor sit amet
                                 consectetur adipisicing elit, sed dos
                                 mod tempor incididunt ut labore et
@@ -1194,7 +915,7 @@
                 <div class="col-lg-4">
                     <div class="ltn__testimonial-item ltn__testimonial-item-7">
                         <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i> 
+                            <p><i class="flaticon-left-quote-1"></i>
                                 Precious ipsum dolor sit amet
                                 consectetur adipisicing elit, sed dos
                                 mod tempor incididunt ut labore et
@@ -1431,5 +1152,5 @@
     </div>
     <!-- BLOG AREA END -->
 
-    
+
 <?php include 'footer.php'; ?>

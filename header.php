@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<php class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -39,8 +39,8 @@
                     <div class="col-md-7">
                         <div class="ltn__top-bar-menu">
                             <ul>
-                                <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i> info@webmail.com</a></li>
-                                <li><a href="locations.html"><i class="icon-placeholder"></i> 15/A, Nest Tower, NYC</a></li>
+                                <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i> Businessdevelopment@bbproperties.com</a></li>
+                                <li><a href="locations.html"><i class="icon-placeholder"></i> Gandhi Nager Vellore</a></li>
                             </ul>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     <div class="col">
                         <div class="site-logo-wrap">
                             <div class="site-logo">
-                                <a href="index.html"><img src="img/logo.png " alt="Logo"></a>
+                                <a href="index.php"><img src="img/logo.png " alt="Logo"></a>
                             </div>
                             <div class="get-support clearfix d-none">
                                 <div class="get-support-icon">
@@ -92,7 +92,7 @@
                                 </div>
                                 <div class="get-support-info">
                                     <h6>Get Support</h6>
-                                    <h4><a href="tel:+123456789">123-456-789-10</a></h4>
+                                    <h4><a href="tel:+123456789">+91 7010473833</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -113,6 +113,7 @@
                                         </li>
                                         <li><a href="clients.php">Clients</a></li>
                                         <li><a href="ehs.php">EHS</a></li>
+                                        <li><a href="contact.php">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </nav>

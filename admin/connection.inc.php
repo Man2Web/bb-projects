@@ -1,6 +1,6 @@
-<?php 
+<?php
 session_start();
-$con=mysqli_connect("localhost","root","","bbprojects");
+$con=mysqli_connect("localhost","root","","bandb");
 //define('SERVER_PATH',$_SERVER['DOCUMENT_ROOT'].'https://mitragroceries.com/');
 //define('SITE_PATH','https://mitragroceries.com/');
 

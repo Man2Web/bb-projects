@@ -3,7 +3,7 @@
             <div class="footer-inner bg-white">
                <div class="row">
                   <div class="col-sm-6">
-                     Copyright &copy; <?php echo date('Y')?> Maa Plante Tech Solutions.
+                     Copyright &copy; <?php echo date('Y')?> Man 2 Web.
                   </div>
                   
                </div>

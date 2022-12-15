@@ -125,6 +125,7 @@
                         <div class="ltn__copyright-menu text-end">
                             <ul>
                                 <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Claim</a></li>
                                 <li><a href="#">Privacy & Policy</a></li>
                             </ul>
                         </div>
