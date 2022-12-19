@@ -8493,7 +8493,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ---------------------------------------------------- */
 .ltn__social-media ul {
   margin: 0;
-  padding: 0; }
+  padding: 2; }
   .ltn__social-media ul li {
     list-style: none;
     display: inline-block;
